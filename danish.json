@@ -20,8 +20,8 @@
             "header":"Andre Bitcoin links",
             "pools2":"Cirkeldiagram som viser markedsandelen for de bedste Bitcoin mining pools",
             "largest":"Største transaktioner",
+            "orphaned":"Forkastede blokke",
             "strange":"Sære Transaktioner",
-            "orphaned":"Forladte blokke",
             "notifications":"Betalingsnotificering",
             "nodes":"Bitcoin knudepunkter",
             "rejected":"Afviste",
@@ -36,11 +36,12 @@
          }
       },
       "orphaned_blocks":{
-         "title":"Forladte Blocks - Blockchain.info",
-         "meta_description":"Forladte blokke er gyldige blokke, der ikke er en del af Bitcoins hovedblokkæde.",
+         "timestamp":"Tidspunkt",
+         "title":"Forkastede Blokke - Blockchain.info",
+         "meta_description":"Forkastede blokke er gyldige blokke, der ikke er en del af Bitcoins hovedblokkæde.",
          "number_of_transactions":"Antal transaktioner",
-         "p1":"Fritstående eller forladte (forældreløse) blokke er gyldige blokke, som ikke er en del af hovedkæden. De kan forekomme naturligt, når to miners producerer blokke på samme tid, eller de kan være forårsaget af at en angriber (med nok hashing kraft) forsøger at annullere transaktioner.",
-         "header":"Forladte Blokke"
+         "p1":"Forkastede blokke er rent teknisk gyldige blokke, men de er ikke en del af hovedkæden og derfor værdiløse. De kan forekomme naturligt, når to eller flere miners genererer gyldige blokke af samme højde. Men forkastede blokke kan også være forårsaget af at en angriber (med nok hashing kraft) forsøger at annullere transaktioner.",
+         "header":"Forkastede Blokke"
       },
       "api_index":{
          "data_api_description":"Fremsøg JSON data om blokke og transaktioner. Næsten alle de data, du ser på denne hjemmeside er tilgængelig i JSON format.",
@@ -110,8 +111,9 @@
          },
          "network_propagation":"Netværksudbredelse",
          "summary_table":{
+            "timestamp":"Tidspunkt",
             "output_title":"Output Titel",
-            "orphaned":"Forladte",
+            "orphaned":"Forkastede",
             "block_reward":"Blok belønning",
             "nonce":"Nonce",
             "received_time":"Tidspunkt modtaget",
@@ -125,8 +127,8 @@
          "meta_description":"Bitcoin transaktioner videreformidlet af IP-adressen {0}"
       },
       "double_spends":{
+         "orphaned":"Forkastede",
          "sub_header":"Dobbeltbetalinger opdaget i de sidste 500.000 transaktioner (10 minutter Cache)",
-         "orphaned":"Forladte",
          "title":"Bitcoin Dobbeltbetalinger - Blockchain.info",
          "header":"Dobbeltbetalinger",
          "warning":"Dobbeltbetalinger på denne side kan være utilsigtede. Hvis en ondsindet produceret dobbeltbetaling er opført på denne side, er det ikke tegn på at det var en succes, eller at en forhandler eller bruger tabte penge som følge heraf."
